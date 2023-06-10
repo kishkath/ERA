@@ -9,6 +9,6 @@
 
 ### Assignment Folder: 
 
-* A Kind of Multi-Verse of Repositories 😝, Sponspored by ERA, directed by me*
+* A Kind of Multi-Verse of Repositories 😝, Sponspored by ERA, directed by me
 
 https://github.com/kishkath/S6-MNIST-V1/tree/main
