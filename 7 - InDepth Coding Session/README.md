@@ -11,11 +11,8 @@ Steps briefly followed as:
 5. Dropout
 6. Playing with LR's.
 
-* The Assignment asks to design these practices to achieve the accuracy of 99.4 within 15 Epochs such that model maintaining parameters less than 8000.
-
-* The 3 practices have been done,
-
-    model1.py: Just a model to make it learn regardless of its computation.
-    model2.py: A model designed as a skeleton design for the next steps.
-    model3.py: The precise network designed with less than 8000 parameters.
-  
+### The Assignment asks to design these practices to achieve the accuracy of 99.4 within 15 Epochs such that model maintaining parameters less than 8000.
+                model1.py: Just a model to make it learn regardless of its computation.
+                model2.py: A model designed as a skeleton design for the next steps.
+                model3.py: The precise network designed with less than 8000 parameters.
+                  
