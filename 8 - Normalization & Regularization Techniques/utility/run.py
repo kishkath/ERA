@@ -46,7 +46,7 @@ class Performance:
             l1=0
             if self.l1_reg[0]==True:
                 lambda_l1 = self.l1_reg[1]
-                for p in model.parameters():
+                for p in self.model.parameters():
                     l1 = l1 + p.abs().sum()
                 loss = loss + lambda_l1*l1
 
