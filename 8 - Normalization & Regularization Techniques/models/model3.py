@@ -66,8 +66,8 @@ class NetArch(nn.Module):
         Rfout = Rin + (K-1)*Jin = 10 + (3-1)*2 = 14
         """
         self.conv_block6 = nn.Sequential(
-            nn.Conv2d(20, 20, 3, padding=0, bias=False),
-            nn.GroupNorm(2,20),
+            nn.Conv2d(20, 32, 3, padding=0, bias=False),
+            nn.GroupNorm(2,32),
             nn.ReLU())
         """
         out_features = (15-3) + 1 = 13
@@ -75,7 +75,7 @@ class NetArch(nn.Module):
         Rfout = 18
         """
         self.conv_block7 = nn.Sequential(
-            nn.Conv2d(20, 32, 1, padding=0, bias=False),
+            nn.Conv2d(32, 32, 1, padding=0, bias=False),
             nn.ReLU())
         """
         out_features = 13 ,Rfout = 18 
@@ -106,8 +106,8 @@ class NetArch(nn.Module):
         Rfout = 30 + 8 = 38 
         """
         self.conv_block10 = nn.Sequential(
-            nn.Conv2d(48, 16, 3, padding=0, bias=False),
-            nn.GroupNorm(2,16),
+            nn.Conv2d(48, 32, 3, padding=0, bias=False),
+            nn.GroupNorm(2,32),
             nn.ReLU())
         """
         out_features = (6-3) + 1 = 4
@@ -121,7 +121,7 @@ class NetArch(nn.Module):
         Rfout = 46 + (4-1)*4 = 58
         """
         self.conv_block11 = nn.Sequential(
-            nn.Conv2d(16, 10, 1, padding=0, bias=False))
+            nn.Conv2d(32, 10, 1, padding=0, bias=False))
 
     def forward(self, x):
         x = self.conv_block1(x)
