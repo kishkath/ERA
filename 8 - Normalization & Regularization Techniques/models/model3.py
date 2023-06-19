@@ -106,8 +106,8 @@ class NetArch(nn.Module):
         Rfout = 30 + 8 = 38 
         """
         self.conv_block10 = nn.Sequential(
-            nn.Conv2d(48, 32, 3, padding=0, bias=False),
-            nn.GroupNorm(2,32),
+            nn.Conv2d(48, 16, 3, padding=0, bias=False),
+            nn.GroupNorm(2,16),
             nn.ReLU())
         """
         out_features = (6-3) + 1 = 4
@@ -121,7 +121,7 @@ class NetArch(nn.Module):
         Rfout = 46 + (4-1)*4 = 58
         """
         self.conv_block11 = nn.Sequential(
-            nn.Conv2d(32, 10, 1, padding=0, bias=False))
+            nn.Conv2d(16, 10, 1, padding=0, bias=False))
 
     def forward(self, x):
         x = self.conv_block1(x)
