@@ -133,7 +133,7 @@ class NetArch(nn.Module):
         x = self.conv_block6(x)
         x = self.conv_block7(x)
         x = self.maxPool2(x)
-        x = x + self.conv_block8(x)
+        x = self.conv_block8(x)
         x = self.conv_block9(x)
         x = self.conv_block10(x)
         x = self.gap(x)
