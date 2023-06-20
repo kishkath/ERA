@@ -14,12 +14,13 @@ test_incorrect_pred = {'images': [], 'ground_truths': [], 'predicted_vals': []}
 
 class Performance:
 
-    def __init__(self, device, model, data,optimizer,criterion):
+    def __init__(self, device, model, data,optimizer,criterion,l1_reg=None):
         self.device = device
         self.model = model
         self.optimizer = optimizer
         self.criterion = criterion
         self.train_loader, self.test_loader = data[0], data[1]
+        self.l1_reg = l1_reg
 
     def GetCorrectPredCount(self,pPrediction, pLabels):
         return pPrediction.argmax(dim=1).eq(pLabels).sum().item()
@@ -42,6 +43,12 @@ class Performance:
             # Calculate loss
             loss = self.criterion(pred, target)
             train_loss += loss.item()
+            l1=0
+            if self.l1_reg[0]==True:
+                lambda_l1 = self.l1_reg[1]
+                for p in self.model.parameters():
+                    l1 = l1 + p.abs().sum()
+                loss = loss + lambda_l1*l1
 
             # Backpropagation
             loss.backward()
