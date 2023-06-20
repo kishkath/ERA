@@ -14,7 +14,7 @@ class NetArch(nn.Module):
 
         self.conv_block1 = nn.Sequential(
             nn.Conv2d(3, 16, 3, padding=1, bias=False),
-            nn.GroupNorm(2,16),
+            nn.GroupNorm(4,16),
             nn.ReLU())
 
         """
@@ -24,7 +24,7 @@ class NetArch(nn.Module):
         """
         self.conv_block2 = nn.Sequential(
             nn.Conv2d(16, 16, 3, padding=1, bias=False),
-            nn.GroupNorm(2,16),
+            nn.GroupNorm(4,16),
             nn.ReLU())
         """
         out_features = (32+2-3)/1 + 1 = 32
@@ -49,7 +49,7 @@ class NetArch(nn.Module):
 
         self.conv_block4 = nn.Sequential(
             nn.Conv2d(20, 20, 3, padding=1, bias=False),
-            nn.GroupNorm(2,20),
+            nn.GroupNorm(4,20),
             nn.ReLU())
         """
         out_features = (15+2-3)+1 = 15 
@@ -58,7 +58,7 @@ class NetArch(nn.Module):
         """
         self.conv_block5 = nn.Sequential(
             nn.Conv2d(20, 20, 3, padding=1, bias=False),
-            nn.GroupNorm(2,20),
+            nn.GroupNorm(4,20),
             nn.ReLU())
         """
         out_features = (15+2-3) + 1 = 15 
@@ -67,7 +67,7 @@ class NetArch(nn.Module):
         """
         self.conv_block6 = nn.Sequential(
             nn.Conv2d(20, 32, 3, padding=0, bias=False),
-            nn.GroupNorm(2,32),
+            nn.GroupNorm(4,32),
             nn.ReLU())
         """
         out_features = (15-3) + 1 = 13
@@ -89,7 +89,7 @@ class NetArch(nn.Module):
         """
         self.conv_block8 = nn.Sequential(
             nn.Conv2d(32, 32, 3, padding=1, bias=False),
-            nn.GroupNorm(2,32),
+            nn.GroupNorm(4,32),
             nn.ReLU())
         """
         out_features =  (6-3)  + 1 = 6 
@@ -98,7 +98,7 @@ class NetArch(nn.Module):
         """
         self.conv_block9 = nn.Sequential(
             nn.Conv2d(32, 48, 3, padding=1, bias=False),
-            nn.GroupNorm(2,48),
+            nn.GroupNorm(4,48),
             nn.ReLU())
         """
         out_fetures = 6
@@ -107,7 +107,7 @@ class NetArch(nn.Module):
         """
         self.conv_block10 = nn.Sequential(
             nn.Conv2d(48, 16, 3, padding=0, bias=False),
-            nn.GroupNorm(2,16),
+            nn.GroupNorm(4,16),
             nn.ReLU())
         """
         out_features = (6-3) + 1 = 4
