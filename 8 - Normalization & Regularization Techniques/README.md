@@ -30,16 +30,16 @@ The session-8 Folder contains the MNIST model ran with Batch-normalization(incl.
       ---------
       
       ├── Normalization Techniques
-      │   ├── models\
+      │   ├── models
       │   │   ├── model1.py: The Network Architecture based on usage of Batch-Normalization.
       │   │   ├── model2.py: The Network Architecture based on usage of Layer-Normalization.
       │   │   ├── model3.py: The Network Architecture based on usage of Group-Normalization.
-      │   ├── utility\
+      │   ├── utility
       │   │   ├── dataset.py: Managing the data & retrieving it.
       │   │   ├── run.py:     Makes the model learn.
       │   │   ├── utils.py:   Contains the utilities required for the process.
       │   │   ├── visualize.py: Contains the code for visualizing.
-      │   ├── weights\
+      │   ├── weights
       │   │    ├── Contains the saved model weights
       │   ├── BatchNorm_run.ipynb: Execution of Network with Batch-normalization. 
       │   ├── LayerNorm_run.ipynb: Execution of Network with Layer-Normalization.
