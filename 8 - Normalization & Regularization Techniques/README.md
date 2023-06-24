@@ -1,6 +1,4 @@
-## Tweaking data & its architecture(Copy_of_SlimerModel_with_norm_techniques.ipynb):
-
-**Session5: Normalization Techniques** - Describing about why there is a need for normalization, standardization, and different types of normalization such as Layer Normalization, Group Normalization, Batch Normalization.
+**Session8: Normalization Techniques** - Describing about why there is a need for normalization, standardization, and different types of normalization such as Layer Normalization, Group Normalization, Batch Normalization.
 
 **Holla, Lets get more neighbours. Lets Scale the data and get more neighbours(pixels) with in a small range of distance.**
 
@@ -26,20 +24,19 @@ In DNN's, we perform Batch-Normalization which meant scaling & shifting the valu
 
 ![images](https://user-images.githubusercontent.com/60026221/215571530-ede0ccd5-51f3-4472-979f-3abc12c2edc6.jpeg)
 
-The session-5 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
+The session-8 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
+
+tree /F
 
       Results:
-      Note: The best & highest accuracies aren't written here, but the ones with less provoke to overfitting.
+    
+      Top Accuracies of usage of Normalization Techniques:
 
-      GN has achieved good result
+      * BN: 76.35
 
-      Top Accuracies:
+      * GN: 64.76
 
-      BN with L1 Reg : 98.31 & 97.7
-
-      GN : 99.36 & 99.28
-
-      LN: 99.29 & 99.21
+      * LN: 75.25
       
       ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,12 +48,16 @@ The session-5 Folder contains the MNIST model ran with Batch-normalization(incl.
 
 Graphs: 
 
-                      Training Loss,                                   Testing Loss, Below is Test Accuracy
-                      Below One is Training Accuracy
-![plots](https://user-images.githubusercontent.com/60026221/215577951-372c4d8a-957e-4b2d-8003-f351bd032ecc.png)
+                      Training Loss,                                   Testing Loss,
+                      Below One is Training Accuracy                   Below one is Test-Accuracy.
+                      
+![plots_S8](https://github.com/kishkath/ERA/assets/60026221/4ce456c5-9f5f-499b-8665-0feaaaba0527)
 
 
 
 
-Images: to be Added.
+Mis-Classified Images:
+
+
+![mis_classified_s8](https://github.com/kishkath/ERA/assets/60026221/8dd10800-3bd7-490e-8d01-8975bf05f5a2)
 
