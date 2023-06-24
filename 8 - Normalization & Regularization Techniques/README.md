@@ -20,15 +20,18 @@ In DNN's, we perform Batch-Normalization which meant scaling & shifting the valu
 
 **Layer-Normalization**: Normalization is performed on a layer at a time, whereas in Batch-normalization single part of each layer is performed.
 
-**Group-NOrmalization**: Normalization is performed across the channels by dividing in to groups and normalizes the features within each group. 
+**Group-Normalization**: Normalization is performed across the channels by dividing in to groups and normalizes the features within each group. 
 
 ![images](https://user-images.githubusercontent.com/60026221/215571530-ede0ccd5-51f3-4472-979f-3abc12c2edc6.jpeg)
 
-The session-8 Folder contains the MNIST model ran with Batch-normalization(incl. L1 Regularization) & Layer-normalization & Group-Normalization.
+The session-8 Folder contains the CIFAR Dataset with Batch-normalization & Layer-normalization & Group-Normalization.
+
+      Architecture: 
+      ------------
+      C1 C2 c3(1x1) P1 C4 C5 C6 c7(1x1) P2 C8 C9 C10 GAP C11
 
       Directory: 
       ---------
-      
       ├── Normalization Techniques
       │   ├── models
       │   │   ├── model1.py: The Network Architecture based on usage of Batch-Normalization.
@@ -47,35 +50,30 @@ The session-8 Folder contains the MNIST model ran with Batch-normalization(incl.
       └── README.md Details about the Process.
 
       Results:
-    
+      -------
+      
       Top Accuracies of usage of Normalization Techniques:
 
-      * BN: 76.35
+      * BN: 76.35%
 
-      * GN: 64.76
+      * GN: 64.76%
 
-      * LN: 75.25
+      * LN: 75.25%
       
       ---------------------------------------------------------------------------------------------------------------------------------------------
 
       Analysis:
 
-      Here, LN & GN has performed a quite good, whereas BN + L1 Reg dipped in the performance as compared to them. GN can be considered as a competitive to BN.
+      Batch Normalization has performed well with more than 70% of accuracy.
 
       Training parameters didnt bothered much , while the test plots resulted in different ways for BN & GN as shown below: 
 
-Graphs: 
 
-                      Training Loss,                                   Testing Loss,
-                      Below One is Training Accuracy                   Below one is Test-Accuracy.
-                      
 ![plots_S8](https://github.com/kishkath/ERA/assets/60026221/4ce456c5-9f5f-499b-8665-0feaaaba0527)
 
 
 
-
 Mis-Classified Images:
-
 
 ![mis_classified_s8](https://github.com/kishkath/ERA/assets/60026221/8dd10800-3bd7-490e-8d01-8975bf05f5a2)
 
