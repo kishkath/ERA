@@ -1,4 +1,4 @@
-**Session8: Normalization Techniques** - Describing about why there is a need for normalization, standardization, and different types of normalization such as Layer Normalization, Group Normalization, Batch Normalization.
+**Session8: Normalization & Regularization Techniques** - Describing about why there is a need for normalization, standardization, and different types of normalization such as Layer Normalization, Group Normalization, Batch Normalization.
 
 **Holla, Lets get more neighbours. Lets Scale the data and get more neighbours(pixels) with in a small range of distance.**
 
