@@ -41,10 +41,10 @@ class NetArch(nn.Module):
         
         self.conv_block3 = nn.Sequential(
             nn.Conv2d(64,64,3,padding=1,groups=64),
-            nn.Conv2d(64,32,1),
+            nn.Conv2d(64,48,1),
             nn.ReLU(),
         
-            nn.Conv2d(32,32,3,padding=1),
+            nn.Conv2d(48,32,3,padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
             
@@ -56,14 +56,14 @@ class NetArch(nn.Module):
             nn.Conv2d(32,24,3,padding=1),
             nn.BatchNorm2d(24),
             nn.ReLU(),
-            nn.Conv2d(24,24,4),
-            nn.BatchNorm2d(24),
+            nn.Conv2d(24,10,4),
+            nn.BatchNorm2d(10),
             nn.ReLU(),
             
             nn.AvgPool2d(1))
 
         self.fc = nn.Linear(1*1*24,10)
-        self.dropout = nn.Dropout2d(0.01)
+        self.dropout = nn.Dropout2d(0.025)
     def forward(self,x):
         x = self.conv_block1(x)
         x = self.dropout(x)
@@ -72,8 +72,8 @@ class NetArch(nn.Module):
         x = self.conv_block3(x)
         x = self.dropout(x)
         x = self.conv_block4(x)
-        x = x.reshape(-1,24)
-        x = self.fc(x)
+        x = x.view(-1,10)
+        # x = self.fc(x)
 
         return F.log_softmax(x,dim=-1)
             
