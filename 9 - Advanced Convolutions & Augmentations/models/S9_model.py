@@ -53,14 +53,14 @@ class NetArch(nn.Module):
             nn.ReLU())
         
         self.conv_block4 = nn.Sequential(
-            nn.Conv2d(32,24,3),
+            nn.Conv2d(32,24,3,padding=1),
             nn.BatchNorm2d(24),
             nn.ReLU(),
             nn.Conv2d(24,24,3),
             nn.BatchNorm2d(24),
             nn.ReLU(),
             
-            nn.AvgPool2d(4))
+            nn.AvgPool2d(2))
 
         self.fc = nn.Linear(1*1*24,10)
         self.dropout = nn.Dropout2d(0.01)
