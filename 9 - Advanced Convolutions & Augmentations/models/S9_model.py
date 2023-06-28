@@ -41,6 +41,7 @@ class NetArch(nn.Module):
         self.conv_block3 = nn.Sequential(
             nn.Conv2d(64,64,3,padding=1,groups=64),
             nn.Conv2d(64,64,1),
+            nn.ReLU(),
         
             nn.Conv2d(64,64,3,padding=1),
             nn.BatchNorm2d(64),
