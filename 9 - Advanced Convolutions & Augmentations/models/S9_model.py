@@ -30,7 +30,7 @@ class NetArch(nn.Module):
             nn.BatchNorm2d(128),
             nn.ReLU(),
             
-            nn.Conv2d(64,64,3,padding=1),
+            nn.Conv2d(128,64,3,padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
            
