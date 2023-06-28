@@ -26,11 +26,11 @@ class NetArch(nn.Module):
          
         
         self.conv_block2 = nn.Sequential(
-            nn.Conv2d(32,32,3,padding=1),
-            nn.BatchNorm2d(32),
+            nn.Conv2d(32,64,3,padding=1),
+            nn.BatchNorm2d(64),
             nn.ReLU(),
            
-            nn.Conv2d(32,128,3,padding=1,dilation=2),
+            nn.Conv2d(64,128,3,padding=1,dilation=2),
             nn.BatchNorm2d(128),
             nn.ReLU(),
 
@@ -40,14 +40,14 @@ class NetArch(nn.Module):
         
         self.conv_block3 = nn.Sequential(
             nn.Conv2d(64,64,3,padding=1,groups=64),
-            nn.Conv2d(64,64,1),
+            nn.Conv2d(64,32,1),
             nn.ReLU(),
         
-            nn.Conv2d(64,64,3,padding=1),
-            nn.BatchNorm2d(64),
+            nn.Conv2d(32,32,3,padding=1),
+            nn.BatchNorm2d(32),
             nn.ReLU(),
             
-            nn.Conv2d(64,64,3,stride=2,padding=1),
+            nn.Conv2d(32,64,3,stride=2,padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU())
         
@@ -55,7 +55,9 @@ class NetArch(nn.Module):
             nn.Conv2d(64,32,3,padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(),
-            nn.Conv2d(32,16,3),
+            nn.Conv2d(32,16,3,padding=1),
+            nn.BatchNorm2d(16),
+            nn.ReLU(),
             
             nn.AvgPool2d(2))
 
