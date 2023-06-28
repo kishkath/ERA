@@ -58,7 +58,7 @@ class args():
     def __init__(self, device='cpu', use_cuda=False) -> None:
         self.device = device
         self.use_cuda = use_cuda
-        self.kwargs = {'num_workers': 2, 'pin_memory': True} if self.use_cuda else {}
+        self.kwargs = {'num_workers': 4, 'pin_memory': True} if self.use_cuda else {}
 
 class loader:
     
@@ -66,7 +66,7 @@ class loader:
         train_transforms = A.Compose([
             A.HorizontalFlip(p=0.5),
             A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16, min_width=16,fill_value=0.4734,p=round(random.uniform(0.35,0.52),2)),
-            A.ShiftScaleRotate(shift_limit=0.1, scale_limit=0.2, rotate_limit=45, p=1),
+            A.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.2, rotate_limit=45, p=1),
             A.Normalize(mean=[0.4914, 0.4822, 0.4465], std=[0.247, 0.243, 0.261]),
             A.pytorch.ToTensorV2()])
 
