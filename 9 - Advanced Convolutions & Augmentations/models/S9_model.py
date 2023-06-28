@@ -26,15 +26,15 @@ class NetArch(nn.Module):
          
         
         self.conv_block2 = nn.Sequential(
-            nn.Conv2d(32,32,3,padding=1),
-            nn.BatchNorm2d(32),
-            nn.ReLU(),
-           
-            nn.Conv2d(32,64,3,padding=1,dilation=2),
+            nn.Conv2d(32,64,3,padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
+           
+            nn.Conv2d(64,128,3,padding=1,dilation=2),
+            nn.BatchNorm2d(128),
+            nn.ReLU(),
 
-            nn.Conv2d(64,128,3,stride=2,padding=1),
+            nn.Conv2d(128,128,3,stride=2,padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU())
         
