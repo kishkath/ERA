@@ -59,7 +59,7 @@ class NetArch(nn.Module):
             nn.BatchNorm2d(16),
             nn.ReLU(),
             
-            nn.AvgPool2d(2))
+            nn.AvgPool2d(4))
 
         self.fc = nn.Linear(1*1*16,10)
         self.dropout = nn.Dropout2d(0.05)
