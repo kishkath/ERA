@@ -71,7 +71,7 @@ class NetArch(nn.Module):
         x = self.conv_block3(x)
         x = self.dropout(x)
         x = self.conv_block4(x)
-        x = x.reshape(-1,10)
+        x = x.reshape(-1,32)
         x = self.fc(x)
 
         return F.log_softmax(x,dim=-1)
