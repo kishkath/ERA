@@ -64,8 +64,10 @@ class loader:
     
     def load_data(batch_size):
         train_transforms = A.Compose([
+            A.PadIfNeeded (min_height=4, min_width=4,always_apply=False, p=0.5),
+            A.RandomCrop (32,32, always_apply=False, p=0.5),
             A.HorizontalFlip(p=0.5),
-            A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16, min_width=16,fill_value=0.4734,p=round(random.uniform(0.35,0.52),2)),
+            A.CoarseDropout(max_holes = 1, max_height=16, max_width=16, min_holes = 1, min_height=16, min_width=16,fill_value=0.4734,p=1),
             A.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.1, rotate_limit=45, p=1),
             A.Normalize(mean=[0.4914, 0.4822, 0.4465], std=[0.247, 0.243, 0.261]),
             A.pytorch.ToTensorV2()])
