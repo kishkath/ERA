@@ -64,11 +64,11 @@ class loader:
     
     def load_data(batch_size):
         train_transforms = A.Compose([
-            A.Normalize(mean=[0.4914, 0.4822, 0.4465], std=[0.247, 0.243, 0.261]),
             A.PadIfNeeded (min_height=4, min_width=4,always_apply=False, p=0.5),
             A.RandomCrop (32,32, always_apply=False, p=0.5),
             #A.fliplr(),
             A.Cutout(num_holes=1, max_h_size=8, max_w_size=8, fill_value=[0.4914*255, 0.4822*255, 0.4465*255], always_apply=True, p=0.5),
+            A.Normalize(mean=[0.4914, 0.4822, 0.4465], std=[0.247, 0.243, 0.261]),
             A.pytorch.ToTensorV2()])
 
         trainset = Cifar10SearchDataset(root='./data', train=True,
