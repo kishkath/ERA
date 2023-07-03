@@ -14,13 +14,14 @@ test_incorrect_pred = {'images': [], 'ground_truths': [], 'predicted_vals': []}
 
 class Performance:
 
-    def __init__(self, device, model, data,optimizer,criterion,l1_reg=None):
+    def __init__(self, device, model, data,optimizer,criterion,l1_reg=None,scheduler=None):
         self.device = device
         self.model = model
         self.optimizer = optimizer
         self.criterion = criterion
         self.train_loader, self.test_loader = data[0], data[1]
         self.l1_reg = l1_reg
+        self.scheduler = scheduler
 
     def GetCorrectPredCount(self,pPrediction, pLabels):
         return pPrediction.argmax(dim=1).eq(pLabels).sum().item()
@@ -53,6 +54,8 @@ class Performance:
             # Backpropagation
             loss.backward()
             self.optimizer.step()
+            if self.scheduler!=None:
+                self.scheduler.step()
 
             correct += self.GetCorrectPredCount(pred, target)
             processed += len(data)
