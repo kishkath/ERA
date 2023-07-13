@@ -4,7 +4,9 @@ Albumentations.
 ### Session 9 Assignment: 
 
 A. Problem Statement: 
-Write a new network thathas the architecture to C1C2C3C40 (No MaxPooling, but 3 convolutions, where the last one has a stride of 2 instead) total RF must be more than 44
+--------------------
+Write a new network thathas the architecture to C1C2C3C40 (No MaxPooling, but 3 convolutions, 
+where the last one has a stride of 2 instead) total RF must be more than 44
 
 one of the layers must use Depthwise Separable Convolution
  
@@ -22,3 +24,34 @@ use albumentation library and apply:
   dataset), mask_fill_value = None)
 
 -> Achieve 85% accuracy, as many epochs as you want. Total Params to be less than 200k.
+
+B. Define Problem:
+------------------
+ Develop the neural network such that it follows the provided architecture maintaining less than 200K parameters to achieve validation-accuracy of 85%.
+
+C. Model Architecture:
+---------------------
+ "C1-C2-C3-C4-output"
+ * For every convolution block, there has to be 3 3x3 kernel convolutions with a stride of 2.
+ * Total Parameter Count: 180,978
+
+D. Augmented Images: 
+-------------------
+ ![Augmented](https://github.com/kishkath/ERA/assets/60026221/c9ea71fe-3cf9-47d7-9a2c-12339e4ebbf4)
+
+D. Network Results: 
+-------------------
+ Trained the network for 72 Epochs with SGD optimizer and CrossEntropyLoss fn.
+ 
+ Achieved the desired accuracy at 45th Epoch.
+ 
+     Epoch 45
+     Train: Loss=0.5043 Batch_id=390 Accuracy=77.08: 100%|██████████| 391/391 [00:17<00:00, 22.08it/s]
+     Test set: Average loss: 0.0035, Accuracy: 8526/10000 (85.26%)
+ 
+ ![RES](https://github.com/kishkath/ERA/assets/60026221/2e0d4048-3233-4f65-9670-be0db37b4b15)
+
+ * Mis-classified Images:
+ ========================
+ ![MIS_CLASSIFIED](https://github.com/kishkath/ERA/assets/60026221/a030e214-6184-4a86-91e1-3b2ddaa951f9)
+
