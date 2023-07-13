@@ -36,18 +36,18 @@ use albumentation library and apply:
 -----------------
  The directory structure describes in following way:
 
-  Directory: 
-  ---------
-  ├── Advanced Convolutions & Augmentations
-  │   ├── models
-  │   │   ├── S9_model.py: The Network Architecture designed to achieve 85% accuracy.
-  │   ├── utility
-  │   │   ├── dataset.py: Managing the data & retrieving it.
-  │   │   ├── run.py:     Makes the model learn.
-  │   │   ├── utils.py:   Contains the utilities required for the process.
-  │   │   ├── visualize.py: Contains the code for visualizing.
-  │   ├── CIFAR10_V0.ipynb:  Execution of Network.
-  └── README.md Details about the Process.
+    Directory: 
+    ---------
+    ├── Advanced Convolutions & Augmentations
+    │   ├── models
+    │   │   ├── S9_model.py: The Network Architecture designed to achieve 85% accuracy.
+    │   ├── utility
+    │   │   ├── dataset.py: Managing the data & retrieving it.
+    │   │   ├── run.py:     Makes the model learn.
+    │   │   ├── utils.py:   Contains the utilities required for the process.
+    │   │   ├── visualize.py: Contains the code for visualizing.
+    │   ├── CIFAR10_V0.ipynb:  Execution of Network.
+    └── README.md Details about the Process.
 
 
 🔑 Model Architecture:
