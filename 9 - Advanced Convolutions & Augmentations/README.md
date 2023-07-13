@@ -3,7 +3,7 @@ Albumentations.
 
 ### Session 9 Assignment: 
 
-A. Problem Statement: 
+🔏 Problem Statement: 
 --------------------
 Write a new network thathas the architecture to C1C2C3C40 (No MaxPooling, but 3 convolutions, 
 where the last one has a stride of 2 instead) total RF must be more than 44
@@ -25,21 +25,21 @@ use albumentation library and apply:
 
 -> Achieve 85% accuracy, as many epochs as you want. Total Params to be less than 200k.
 
-B. Define Problem:
+💡 Define Problem:
 ------------------
  Develop the neural network such that it follows the provided architecture maintaining less than 200K parameters to achieve validation-accuracy of 85%.
 
-C. Model Architecture:
+🔑 Model Architecture:
 ---------------------
  "C1-C2-C3-C4-output"
  * For every convolution block, there has to be 3 3x3 kernel convolutions with a stride of 2.
  * Total Parameter Count: 180,978
 
-D. Augmented Images: 
+🔋 Augmented Images: 
 -------------------
  <img src="https://github.com/kishkath/ERA/assets/60026221/c9ea71fe-3cf9-47d7-9a2c-12339e4ebbf4" width = 720 height = 360>
 
-D. Network Results: 
+💊 Network Results: 
 -------------------
  Trained the network for 72 Epochs with SGD optimizer and CrossEntropyLoss fn.
  
