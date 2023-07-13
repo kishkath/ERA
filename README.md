@@ -1,9 +1,9 @@
 # ERA 
 
-Extensive Re-Imagined AI. (VISION + TEXT + AUDIO)
--------------------------------------------------
+## Extensive Re-Imagined AI. (VISION + TEXT + AUDIO)
+   -------------------------------------------------
 
-May2023 - Feb2024:
+### 🕗 May2023 - Feb2024
 
 Era of Multi-Repositories Saga.
 
