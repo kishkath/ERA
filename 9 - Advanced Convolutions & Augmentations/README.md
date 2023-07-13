@@ -32,6 +32,24 @@ use albumentation library and apply:
 ------------------
  Develop the neural network such that it follows the provided architecture maintaining less than 200K parameters to achieve validation-accuracy of 85%.
 
+🚦 Follow-up Process:
+-----------------
+ The directory structure describes in following way:
+
+  Directory: 
+  ---------
+  ├── Advanced Convolutions & Augmentations
+  │   ├── models
+  │   │   ├── S9_model.py: The Network Architecture designed to achieve 85% accuracy.
+  │   ├── utility
+  │   │   ├── dataset.py: Managing the data & retrieving it.
+  │   │   ├── run.py:     Makes the model learn.
+  │   │   ├── utils.py:   Contains the utilities required for the process.
+  │   │   ├── visualize.py: Contains the code for visualizing.
+  │   ├── CIFAR10_V0.ipynb:  Execution of Network.
+  └── README.md Details about the Process.
+
+
 🔑 Model Architecture:
 ---------------------
  "C1-C2-C3-C4-output"
