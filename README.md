@@ -1,7 +1,7 @@
 # ERA 
 
 
-<img src="https://github.com/kishkath/ERA/assets/60026221/05a4fff5-5dd9-4349-9a14-a607a8e04f08" width = 720 height = 540>
+<img src="https://github.com/kishkath/ERA/assets/60026221/05a4fff5-5dd9-4349-9a14-a607a8e04f08" width = 720 height = 360>
 
 ## Extensive Re-Imagined AI. (VISION + TEXT + AUDIO)
    -------------------------------------------------
