@@ -37,7 +37,7 @@ C. Model Architecture:
 
 D. Augmented Images: 
 -------------------
- <img src="https://github.com/kishkath/ERA/assets/60026221/c9ea71fe-3cf9-47d7-9a2c-12339e4ebbf4" width = 540 height = 360>
+ <img src="https://github.com/kishkath/ERA/assets/60026221/c9ea71fe-3cf9-47d7-9a2c-12339e4ebbf4" width = 720 height = 360>
 
 D. Network Results: 
 -------------------
@@ -49,9 +49,9 @@ D. Network Results:
      Train: Loss=0.5043 Batch_id=390 Accuracy=77.08: 100%|██████████| 391/391 [00:17<00:00, 22.08it/s]
      Test set: Average loss: 0.0035, Accuracy: 8526/10000 (85.26%)
  
- <img src="https://github.com/kishkath/ERA/assets/60026221/2e0d4048-3233-4f65-9670-be0db37b4b15" width = 540 height = 360>
+ <img src="https://github.com/kishkath/ERA/assets/60026221/2e0d4048-3233-4f65-9670-be0db37b4b15" width = 720 height = 360>
 
  * Mis-classified Images:
- ========================
- <img src="https://github.com/kishkath/ERA/assets/60026221/a030e214-6184-4a86-91e1-3b2ddaa951f9" width = 540 height = 360>
+-------------------------
+ <img src="https://github.com/kishkath/ERA/assets/60026221/a030e214-6184-4a86-91e1-3b2ddaa951f9" width = 720 height = 360>
 
