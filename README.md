@@ -15,5 +15,6 @@ History: https://github.com/kishkath/EVA
 Procedure: https://github.com/kishkath/TSAI-ModularProgramming
 
 Syllabus: 
+
  [ERA Syllabus.pdf](https://github.com/kishkath/ERA/files/12035268/ERA.Syllabus.pdf)
 
