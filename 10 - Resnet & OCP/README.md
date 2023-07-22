@@ -1,9 +1,8 @@
-**Session9: Advanced Convolutions & Augmentations**: The session describes about the various types of convolutions specifying their advantages & disadvantages. It also introduces a technique to reduce over-fitting issue known as Augmentating data using PyTorch library 
-Albumentations. 
+**Session10: ResNet and One-cycle-Policy**: The session describes about the architecture of resnet and its variants followingly describing the most important way of tuning the hyper-parameter (learning-rate) in a intuitive way.
 
- Ups n Downs are common: https://arxiv.org/abs/1803.09820
+Ups n Downs are common: https://arxiv.org/abs/1803.09820
  
-### Session 9 Assignment: 
+### Session 10 Assignment: 
 
 🔏 Problem Statement: 
 --------------------
