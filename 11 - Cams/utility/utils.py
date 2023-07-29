@@ -13,7 +13,7 @@ def allot_device(random_seed_value):
 
 # load config data
 def load_config():
-    with open("11 - Cams/models/utility/Configs.json") as json_file:
+    with open("11 - Cams/utility/Configs.json") as json_file:
         data = json.load(json_file)
     return data 
 
