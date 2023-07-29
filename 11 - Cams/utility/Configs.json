@@ -1,0 +1,15 @@
+{
+    "batch_size": 128,
+    "epochs": 24,
+    "learning_rate": 0.03,
+    "momentum": 0.9,
+    "num_plot_dataset_images": 12,
+    "optimizer": "SGD",
+    "scheduler": "cosine",
+    "ocp" : true,
+    "random_seed_value": 42,
+    "resume": false,
+    "visualize": true,
+    "weight_decay":0.0001
+  }
+  
