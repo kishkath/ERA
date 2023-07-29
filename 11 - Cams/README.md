@@ -4,10 +4,11 @@ Model too observes: https://jacobgil.github.io/pytorch-gradcam-book/introduction
  
 ### Session 11 Assignment: 
 
-🔏 Problem Statement: 
+🔏 Problem Statement:
+
 --------------------
 
-<img src="https://github.com/kishkath/ERA/assets/60026221/81d819d6-4a49-424f-a788-c258b7021a4f" width = 720 height = 480>
+<img src="https://github.com/kishkath/ERA/assets/60026221/908b159c-9b0d-4b79-91c6-847ee47fc133" width = 720 height = 480>
 
 💡 Define Problem:
 ------------------
@@ -88,11 +89,11 @@ Model too observes: https://jacobgil.github.io/pytorch-gradcam-book/introduction
       Train: Loss=0.1047 Batch_id=97 Accuracy=96.34: 100%|██████████| 98/98 [00:31<00:00,  3.10it/s]
       Test set: Average loss: 0.0006, Accuracy: 9098/10000 (90.98%)
 
- 
- <img src="https://github.com/kishkath/ERA/assets/60026221/7e27f83b-c315-49ec-8e78-afb932199445" width = 720 height = 360>
+
+ <img src="https://github.com/kishkath/ERA/assets/60026221/d93b3435-29d5-4967-b9ce-172f3d5975fe" width = 720 height = 360>
 
  * Mis-classified Images:
  ------------------------
 
- <img src="https://github.com/kishkath/ERA/assets/60026221/d0fc17af-ced5-4c4c-8e3a-b95a11e8d36c" width = 720 height = 360>
+ <img src="https://github.com/kishkath/ERA/assets/60026221/3478d7d2-d7e9-4b4b-ad3b-d22bf808e7fb" width = 720 height = 360>
 
