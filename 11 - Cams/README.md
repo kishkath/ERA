@@ -1,8 +1,8 @@
-**Session10: ResNet and One-cycle-Policy**: The session describes about the architecture of resnet and its variants followingly describing the most important way of tuning the hyper-parameter (learning-rate) in a intuitive way.
+**Session11: Cams and hyperparameter tuning**: The session describes about the CAM Visualizations using GRADCAM followingly describes the nature of hyperparameters and its usage.
 
-Ups n Downs are common: https://arxiv.org/abs/1803.09820
+Model too observes: https://jacobgil.github.io/pytorch-gradcam-book/introduction.html
  
-### Session 10 Assignment: 
+### Session 11 Assignment: 
 
 🔏 Problem Statement: 
 --------------------
@@ -11,9 +11,8 @@ Ups n Downs are common: https://arxiv.org/abs/1803.09820
 
 💡 Define Problem:
 ------------------
- Develop the neural network similar to resnet architecture using identity connections. 
- 
- With the help of One-cycle policy it has to achieve the 90% accuracy with in 24 Epochs.
+ Develop the neural network similar with CAM visualizations. 
+ .
  
 🚦 Follow-up Process:
 -----------------
@@ -23,21 +22,52 @@ Ups n Downs are common: https://arxiv.org/abs/1803.09820
     ---------
     ├── Advanced Convolutions & Augmentations
     │   ├── models
-    │   │   ├── S10_model.py: The Network Architecture designed to achieve 90% accuracy.
+    │   │   ├── resnet.py: The Network Architecture designed to achieve 90% accuracy.
     │   ├── utility
+    │   │   ├── cams.py  : Contains the code for GRADCAM visuals
     │   │   ├── dataset.py: Managing the data & retrieving it.
-    │   │   ├── run.py:     Makes the model learn.
-    │   │   ├── utils.py:   Contains the utilities required for the process.
-    │   │   ├── visualize.py: Contains the code for visualizing.
-    │   ├── OneCyclePolicy_Run.ipynb:  Execution of Network using one-cycle policy.
+    │   │   ├── modelling.py: Contains the code for making the model learn.
+    │   │   ├── optims.py:  Upon the chosen optimizer, the file returns respective optimizer & scheduler
+    │   │   ├── utils.py:   Contains the utilities codes such as device allocation and loading json file with inputs required for the process.
+    │   │   ├── visualizers.py: Contains the code for visualizing.
+    │   ├── OneCyclePolicy_Run2.ipynb:  Execution of Network using one-cycle policy.
+    │   ├── lr_finder.py: Contains the code for finding the learning rate using one-cycle policy.
+    │   ├── run.py:  Contains the code for training the model using obtained lr from lr_finder.py
+    │   ├── requirements.txt: Contains the necessary libraries
     └── README.md Details about the Process.
 
+  Process:
+  -------
+  * The process begins with the provision of relative inputs to hyperparameters in the 'Configs.json' (present in utility folder).
+
+  * Once the inputs are set up, relax.
+
+  * Clone the repo 
+
+  * Install requirements.txt
+
+  * Run lr_finder.py : Here, we will get a suggested LR suitable for model. Provide it in next step. 
+              
+               !python run lr_finder.py
+
+  * Run run.py with the max_lr as lr_finder.py's suggested LR. 
+              
+              !python run --max_lr==obtained_suggested_LR. (If only OCP is being used else no need of max_lr argument)
+
+      * If want to restart training the model use command: 
+         
+             !python run --restart 
+
+      * If want to resume training the model use command: 
+             
+             !python run --resume 
+
+  * All Images will be stored in images directory & model in checkpoint directory.
 
 🔑 Model Architecture:
 ---------------------
- "C1 - (C2 + Residual) - C3 - (C4 + Residual) - MaxPool - FC - output"
+ "ResNet18": https://github.com/kuangliu/pytorch-cifar
 
-  Total Parameter Count: 6,573,130
 
 🔋 One Cycle Policy: 
 -------------------
