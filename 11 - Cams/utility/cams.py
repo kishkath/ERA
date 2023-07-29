@@ -4,7 +4,7 @@ import torchvision.models as models
 from torchvision.utils import make_grid, save_image
 import matplotlib.pyplot as plt
 import torchvision.transforms as transforms
-from visualizers import mis_prediction
+from utility.visualizers import mis_prediction
 import torch 
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
