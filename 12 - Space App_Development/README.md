@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ERA 
 
 
@@ -22,4 +23,6 @@ Procedure: https://github.com/kishkath/TSAI-ModularProgramming
 Syllabus: 
 
  [ERA Syllabus.pdf](https://github.com/kishkath/ERA/files/12035268/ERA.Syllabus.pdf)
+=======
+>>>>>>> 279c45867f1d5e7dc23bdce45c9083c2dcdabc61
 
