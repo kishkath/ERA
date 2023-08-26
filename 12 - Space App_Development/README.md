@@ -42,6 +42,8 @@ Lighten up: https://lightning.ai/
   Process:
   -------
   * The process tends to convert pytorch to pytorch lightning
+  * Solution:
+  * Built the hugging face spaces app, using Gradio. link:  https://huggingface.co/spaces/kishkath/cifar10C
 
 
 🔑 Model Architecture:
