@@ -1,4 +1,4 @@
-**Session12: PyTorch Lightning**: The session describes about the CAM Visualizations using GRADCAM followingly describes the nature of hyperparameters and its usage.
+**Session12: PyTorch Lightning**: The session describes about the pytorch-lightning and its features.
 
 Lighten up: https://lightning.ai/
  
