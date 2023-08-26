@@ -21,7 +21,7 @@ Ups n Downs are common: https://arxiv.org/abs/1803.09820
 
     Directory: 
     ---------
-    ├── Advanced Convolutions & Augmentations
+    ├── Resnet & OCP
     │   ├── models
     │   │   ├── S10_model.py: The Network Architecture designed to achieve 90% accuracy.
     │   ├── utility
