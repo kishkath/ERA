@@ -1,7 +1,7 @@
 **Session16: Transformer Architectures & Speeding them Up**: The session describes about the bert, bart, gpt's, techniques of speeding up the transformer run with help of dynamic padding, ocp's, etc..
 
   
-  ***Holla !, ceci est un projet de traduction de l'anglais vers le français. Allons-y."**
+  ***Holla !, ceci est un projet de traduction de l'anglais vers le français. Allons-y.***
 
   
  
