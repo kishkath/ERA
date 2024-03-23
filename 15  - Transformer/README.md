@@ -44,7 +44,7 @@
         3. Copy the contents of jupyter notebook, and execute the cells.
         4. For fine-tuning modify the parameters of config.py file.
 
-    ### 11th-epoch-model-pt link: 
+    ### 11th-epoch-model-pt link: https://drive.google.com/file/d/1C9JITRtzaMfJ2R1YVf4k_BPlMjMr44xc/view?usp=drive_link
 
 
 🔑 Model Architecture:
