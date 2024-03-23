@@ -39,6 +39,11 @@
   * Solution:
   * Starting the run of transformer with speed-up architectures
 
+        1. Clone the repo
+        2. Move to the directory of (15 - Transformer)
+        3. Copy the contents of jupyter notebook, and execute the cells.
+        4. For fine-tuning modify the parameters of config.py file.
+
 
 🔑 Model Architecture:
 ---------------------
