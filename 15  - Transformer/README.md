@@ -34,7 +34,7 @@
 
   Process:
   -------
-  * The process initiates with loading the english to french language translation from **opus-books**
+  * The process initiates with loading the english to italian language translation from **opus-books**
   * link of dataset: https://huggingface.co/datasets/opus_books/tree/main
   * Solution:
   * Starting the run of transformer with speed-up architectures
