@@ -1,7 +1,7 @@
 **Session14-15: Dawn of Transformers**: The session describes about the detailed overview of vannila transformers its architectures, history of transformers, Attentions
 
 
->>>>> Give me some attention: ******Attention is all you Need*****
+>>>>> Give me some attention: *****Attention is all you Need*****
   
  
 ### Session 15 Assignment: 
