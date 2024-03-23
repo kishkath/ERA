@@ -109,4 +109,21 @@
     TARGET: Ciò mi diede tanti pensieri quanti ne avrebbe dati ad un magistrato il decidere sopra un punto scabrosissimo di politica, o quanti se ne sarebbe presi un giudice prima di sentenziare su la vita o la morte d’un poveretto.
     PREDICTED: Questo contrasto mi spingeva a pensare che il governo sarebbe stato un uomo d ’ accordo con una gran d ’ un uomo o di vita .
 -----------------------------------------------------------------------------------
- 
+
+
+    Processing Epoch 11: 100%|██████████| 4850/4850 [26:09<00:00,  3.09it/s, loss=2.941]
+    --------------------------------------------------------------------------------
+    SOURCE: "Edward--my little wife!"
+    TARGET: — Dite Edoardo, moglie mia!
+    PREDICTED: — Signore , mia moglie !
+    --------------------------------------------------------------------------------
+    SOURCE: While I walked under the dripping orange-trees of my wet garden, and amongst its drenched pomegranates and pine-apples, and while the refulgent dawn of the tropics kindled round me--I reasoned thus, Jane--and now listen; for it was true Wisdom that consoled me in that hour, and showed me the right path to follow.
+    TARGET: "Allora presi una risoluzione mentre passeggiavo sotto i gocciolanti alberi di arancio nel mio giardino bagnato dalla pioggia, fra i melagrani e i pini, intanto che la fulgente rugiada dei tropici scendeva intorno a me. "Così ragionai, e voi ascoltatemi, Jane, perché fu la vera saggezza che mi consolò in quell'ora e mi additò la via da seguire.
+    PREDICTED: Mentre io conduceva sotto le colonne del giardino , mi e le che erano , mentre ero , allora , mi , e , e ora che ora .
+--------------------------------------------------------------------------------
+
+
+ ***Final Result:***
+---------------------
+
+* Loss : 2.941 at epoch: 11
