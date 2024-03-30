@@ -9,6 +9,12 @@ class BilingualDataset(Dataset):
         super().__init__()
         self.seq_len = seq_len
 
+        # english sentences with more than 150 tokens
+        ds = [item for item in ds if len(item['translation'][src_lang]) <= 150 and len(item['translation'][tgt_lang]) <= 160]
+
+        # removing french sentences which has same or near by number of tokens to english language (len(french_tokens) - len(english_tokens) < =10)
+        self.ds = [item for item in ds if abs(len(item['translation'][tgt_lang]) - len(item['translation'][src_lang])) <= 10]
+
         self.ds = ds
         self.tokenizer_src = tokenizer_src
         self.tokenizer_tgt = tokenizer_tgt
