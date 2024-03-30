@@ -18,7 +18,7 @@ import os
 from pathlib import Path
 
 # Huggingface datasets and tokenizers
-from datasets import load_dataset, Dataset as HFDataset
+from datasets import load_dataset
 from tokenizers import Tokenizer
 from tokenizers.models import WordLevel
 from tokenizers.trainers import WordLevelTrainer
@@ -145,19 +145,7 @@ def get_or_build_tokenizer(config, ds, lang):
 def get_ds(config):
     # It only has the train split, so we divide it overselves
     ds_raw = load_dataset('opus_books', f"{config['lang_src']}-{config['lang_tgt']}", split='train')
-
-    refined_data = []
-    for item in ds_raw:
-      src_text = item['translation'][config['lang_src']]
-      tgt_text = item['translation'][config['lang_tgt']]
-      src_text_tokens = re.findall(r"\w+|[^\w\s]+", src_text)
-      tgt_text_tokens = re.findall(r"\w+|]^\w\s]+", tgt_text)
-      refined_data.append(
-        {"id": item['id'],
-        "translation": item["translation"]}
-      )
-    ds_raw = HFDataset.from_list(mapping=refined_data)
-
+    
     # Build tokenizers
     tokenizer_src = get_or_build_tokenizer(config, ds_raw, config['lang_src'])
     tokenizer_tgt = get_or_build_tokenizer(config, ds_raw, config['lang_tgt'])
