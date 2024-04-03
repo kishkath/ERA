@@ -54,8 +54,6 @@
 -------------------
 
   Run1: 
-
-   ├── weights: https://drive.google.com/drive/folders/1pyE84N-6lpxOZQEYYE3OpAq2gNGe7Fz1?usp=drive_link
   
     Epochs: 25,
     Technique: Usage of cuda 
@@ -67,5 +65,19 @@
 
 💊 Model Run Results: 
 -------------------
+
+  weights run1:  https://drive.google.com/drive/folders/1pyE84N-6lpxOZQEYYE3OpAq2gNGe7Fz1?usp=drive_link
+
+  logs: 
+  
+    Processing Epoch 20: 100%|██████████| 996/996 [09:34<00:00,  1.73it/s, loss=1.941]
+    --------------------------------------------------------------------------------
+    SOURCE: No doubt the presence of the Nautilus, even more fearsome than itself, and which it couldn't grip with its mandibles or the suckers on its arms.
+    TARGET: Sans doute de la présence de ce _Nautilus_, plus formidable que lui, et sur lequel ses bras suceurs ou ses mandibules n'avaient aucune prise.
+    PREDICTED: Sans doute la présence du cardinal , plus même que lui - même , et qui ne pouvait tenir sa volonté avec des jésuites ou les bras de son équipage .
+    --------------------------------------------------------------------------------
+    SOURCE: Satisfied with this discovery which confirmed all his suspicions, Athos returned to the hotel, and found Planchet impatiently waiting for him.
+    TARGET: Satisfait de cette découverte qui confirmait tous ses soupçons, Athos revint à l'hôtel et trouva Planchet qui l'attendait avec impatience.
+    PREDICTED: Julien de cette découverte qui tous ses soupçons , revint vers l ’ hôtel , et Julien l ’ attendait .
 
 
