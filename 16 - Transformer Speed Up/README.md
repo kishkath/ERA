@@ -53,6 +53,15 @@
 🔋 Speedup Techniques: 
 -------------------
 
+  Run1: 
+  -> weights: https://drive.google.com/drive/folders/1pyE84N-6lpxOZQEYYE3OpAq2gNGe7Fz1?usp=drive_link
+  
+    Epochs: 25,
+    Technique: Usage of cuda 
+    torch.cuda.amp.autocast(enabled=True)
+
+  
+
 
 
 💊 Model Run Results: 
