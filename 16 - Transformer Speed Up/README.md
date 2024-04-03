@@ -32,7 +32,7 @@
     ---------
     ├── Transformer Speed Up
     │   ├── train.py: contains the script of training module
-    │    ├── model.py: contains the script for model with encoder, decoder, head attention architectures built upon transformer.
+    │   ├── model.py: contains the script for model with encoder, decoder, head attention architectures built upon transformer.
     │   ├── config.py: contains the config values required for the project
     │   ├── dataset.py: contains the code for retrieving the dataset from hugging face, loading data.
     └── README.md Details about the Process.
@@ -54,7 +54,8 @@
 -------------------
 
   Run1: 
-  -> weights: https://drive.google.com/drive/folders/1pyE84N-6lpxOZQEYYE3OpAq2gNGe7Fz1?usp=drive_link
+
+   ├── weights: https://drive.google.com/drive/folders/1pyE84N-6lpxOZQEYYE3OpAq2gNGe7Fz1?usp=drive_link
   
     Epochs: 25,
     Technique: Usage of cuda 
