@@ -70,14 +70,39 @@
 
   logs: 
   
-    Processing Epoch 20: 100%|██████████| 996/996 [09:34<00:00,  1.73it/s, loss=1.941]
+    Processing Epoch 20: 100%|██████████| 996/996 [16:48<00:00,  1.01s/it, loss=2.004]
     --------------------------------------------------------------------------------
-    SOURCE: No doubt the presence of the Nautilus, even more fearsome than itself, and which it couldn't grip with its mandibles or the suckers on its arms.
-    TARGET: Sans doute de la présence de ce _Nautilus_, plus formidable que lui, et sur lequel ses bras suceurs ou ses mandibules n'avaient aucune prise.
-    PREDICTED: Sans doute la présence du cardinal , plus même que lui - même , et qui ne pouvait tenir sa volonté avec des jésuites ou les bras de son équipage .
+    SOURCE: At the slightest indisposition of one of your children, you will no longer see them already in the grave.'
+    TARGET: À la moindre indisposition de vos enfants, vous ne les verrez plus dans la tombe.
+    PREDICTED: Au moindre bruit d ’ une de vos enfants , vous ne les verrez plus par la tombe .
     --------------------------------------------------------------------------------
-    SOURCE: Satisfied with this discovery which confirmed all his suspicions, Athos returned to the hotel, and found Planchet impatiently waiting for him.
-    TARGET: Satisfait de cette découverte qui confirmait tous ses soupçons, Athos revint à l'hôtel et trouva Planchet qui l'attendait avec impatience.
-    PREDICTED: Julien de cette découverte qui tous ses soupçons , revint vers l ’ hôtel , et Julien l ’ attendait .
+    SOURCE: "Let us make another trial," resumed the vagabond.
+    TARGET: – Essayons encore une fois », reprit le truand.
+    PREDICTED: « un autre essai , reprit l ’ abbé .
+    ====================================================================================
+    
+    Processing Epoch 26: 100%|██████████| 996/996 [16:49<00:00,  1.01s/it, loss=1.708]
+    --------------------------------------------------------------------------------
+    SOURCE: Two or three distinguished themselves by real talent, and, among these, one named Chazel; but Julien felt himself repelled by them, and they by him.
+    TARGET: Deux ou trois se distinguaient par un talent réel et, entre autres, un nommé Chazel ; mais Julien se sentait de l’éloignement pour eux et eux pour lui.
+    PREDICTED: Deux ou trois mots se de mauvais talent , et , parmi ces , un poignard ; mais Julien se sentait s ’ éloigner et les par lui .
+    --------------------------------------------------------------------------------
+    SOURCE: I am for those who save the state," said Bonacieux, emphatically.
+    TARGET: Je suis pour ceux qui sauvent l'État», dit avec emphase Bonacieux.
+    PREDICTED: Je suis pour ceux qui , dit avec beaucoup de l ’ air .
+    =====================================================================================
+    
+    Processing Epoch 28: 100%|██████████| 996/996 [16:50<00:00,  1.01s/it, loss=1.802]
+    ----------------------------------------------------------------------------------
+    SOURCE: Mais je l’aurai, docteur ; je vous parie deux contre un que je l’aurai.
+    TARGET: I shall have him, Doctor—I'll lay you two to one that I have him.
+    PREDICTED: I was the first time ; I offer you a which I was to love .
+    --------------------------------------------------------------------------------
+    SOURCE: But the day before he lefthe was suddenly quite changed, and much softened.
+    TARGET: Mais la veille de son départ il parut soudain trèschangé, très adouci.
+    PREDICTED: Mais la veille , il se retrouva tout brusquement , tout à coup , et beaucoup s ' .
+    --------------------------------------------------------------------------------
+    
+    Processing Epoch 29:  62%|██████▏   | 621/996 [10:29<06:19,  1.01s/it, loss=1.730]
 
 
